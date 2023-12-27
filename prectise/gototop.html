@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        height: 100vh;
+      }
+      .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: gray;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="first" style="background-color: pink"></section>
+    <section style="background-color: blue"></section>
+    <section style="background-color: indigo"></section>
+    <section style="background-color: greenyellow"></section>
+
+    <div id="top" class="top" onclick="scrollToTop()">Top</div>
+    <script>
+      function scrollToTop() {
+        window.scroll({
+            top:0,
+            behavior:'smooth'
+        })
+      }
+    </script>
+  </body>
+</html>

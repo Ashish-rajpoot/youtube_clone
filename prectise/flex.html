@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex CSS</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+
+    <style>
+      .copy-button {
+          background-color: #61bcd7;
+          color: white;
+          padding: 5px 10px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          position: absolute;
+          right: 50px;
+        }
+        
+        .copy-button:hover{
+          background-color: #007bff;
+      }
+
+      pre{
+        border: 3px solid black;
+        border-radius: 10px;
+        box-shadow: inset 0 2px 2px #777 , 0 2px 12px #777;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flex</h2>
+
+
+    <pre>
+        <button class="copy-button" id="button-1" onclick="copyCode(1)">Copy</button>
+    <code id="copy-button-1" class="language-css">
+            &lt;style&gt;
+                display : flex, 
+                flex-direction : row,
+            &lt;/style&gt;
+        </code>
+    </pre>
+
+    <div style="display: flex; flex-direction: row">
+      <div style="background-color: lightblue">
+        no width set
+        <p>this is a para</p>
+      </div>
+      <div style="background-color: lightpink">
+        does't move to new line because we does not set the width
+      </div>
+    </div>
+    <div style="margin-top: 50px; display: flex; flex-direction: row">
+      <div style="background-color: lightblue">not width set</div>
+      <div style="background-color: lightpink; width: 100px">
+        100px and text wrap to new line because we set the width to 100px
+      </div>
+    </div>
+    <div style="margin-top: 50px; display: flex; flex-direction: row">
+      <div style="background-color: lightblue; flex: 1">Flex : 1</div>
+      <div style="background-color: lightpink; flex: 1">Flex : 1</div>
+    </div>
+    <div style="margin-top: 50px; display: flex; flex-direction: row">
+      <div style="background-color: lightblue; flex: 2">Flex : 2</div>
+      <div style="background-color: lightpink; flex: 1">Flex : 1</div>
+    </div>
+
+    <pre>
+        <button class="copy-button" id="button-2" onclick="copyCode(2)">Copy</button>
+    <code id="copy-button-2" class="language-css">
+            &lt;style&gt;
+                display : flex,
+                flex-direction : row,
+                flex:1
+            &lt;/style&gt;
+        </code>
+    </pre>
+
+    <script>
+      function copyCode(value) {
+        const codeElement = document.getElementById(`copy-button-${value}`);
+        const textArea = document.createElement("textarea");
+        textArea.value = codeElement.textContent;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+
+        const button = document.getElementById(`button-${value}`);
+        button.innerHTML = "copied";
+        button.style.backgroundColor = "pink";
+        button.style.color = "black";
+        setTimeout(() => {
+          button.innerHTML = "copy";
+          button.style.backgroundColor = "#61bcd7";
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>

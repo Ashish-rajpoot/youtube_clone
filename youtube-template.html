@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Template</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/youtube-template.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="menu" src="./icons/menu-svgrepo-com.svg" alt="search bar" />
+        <img
+          class="youtube-logo"
+          src="./icons/youtube-svgrepo-com.svg"
+          alt="youtube icon"
+        />
+      </div>
+      <div class="center-section">
+        <input type="search" name="search" id="search"
+        oninput="handler()" 
+        />
+        <button class="search-btn">
+          <img src="./icons/search-svgrepo-com.svg" alt="" />
+        </button>
+        <button class="mic-btn">
+          <img src="./icons/mic-svgrepo-com.svg" alt="" />
+        </button>
+      </div>
+      <right-section class="right-section">
+        <img
+          src="./icons/video-upload-svgrepo-com.svg"
+          alt="uplad icon"
+          class="upload-btn"
+        />
+        <img src="./icons/app-svgrepo-com.svg" alt="app btn" class="app-btn" />
+        <div class="notification">
+
+          <img
+          src="./icons/notification-svgrepo-com.svg"
+          alt="notification-btn"
+          class="notification-btn"
+          />
+          <div class="notification-count">
+            3
+          </div>
+      </div>
+        
+        <img
+          src="./images/channels4_profile.jpg"
+          alt="profile-img"
+          class="profile-img"
+        />
+      </right-section>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-links">
+        <div class="icon">
+          <img src="./icons/icons8-home-100.png" alt="home" />
+        </div>
+        <div class="text">Home</div>
+      </div>
+      <div class="sidebar-links">
+        <div class="icon">
+          <img src="./icons/icons8-youtube-shorts-100.png" alt="shorts" />
+        </div>
+        <div class="text">shorts</div>
+      </div>
+      <div class="sidebar-links">
+        <div class="icon">
+          <img src="icons/icons8-video-playlist-100.png" alt="playlist" />
+        </div>
+        <div class="text">subscription</div>
+      </div>
+      <div class="sidebar-links">
+        <div class="icon">
+          <img src="icons/icons8-youtube-100.png" alt="subscription" />
+        </div>
+        <div class="text">you</div>
+      </div>
+      <div class="sidebar-links">
+        <div class="icon">
+          <img src="icons/icons8-youtube-music-100.png" alt="" />
+        </div>
+        <div class="text">youtube music</div>
+      </div>
+    </nav>
+
+    <main class="section">
+      <div class="card">
+        <div class="template-img">
+          <img
+            src="https://i.ytimg.com/vi/J-nB6mP9U6A/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCjltbh6PdoE8Kdw06E6dP6ZlQ81A"
+            alt="img-template"
+            class="img"
+          />
+          <div class="duration">
+            12.12
+          </div>
+        </div>
+        <div class="grid-two">
+          <div class="profile-img">
+            <img
+              src="https://yt3.ggpht.com/ytc/AIf8zZRxxomYrHe3C-k5-bgavMGNAhSU_VJfBsswsPGw=s88-c-k-c0x00ffffff-no-rj"
+              alt="img"
+            />
+          </div>
+          <div class="content-info">
+            <div class="channal-name">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div class="detaile-info">
+              <div class="views">1.5k .</div>
+              <div class="time">4 weeks ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="template-img">
+          <img
+            src="https://i.ytimg.com/vi/p1QU3kLFPdg/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA01AAuKo92wi8qT8jLHDESxwxpSw"
+            alt="img-template"
+            class="img"
+          />
+        </div>
+        <div class="duration">
+          5.68
+        </div>
+        <div class="grid-two">
+          <div class="profile-img">
+            <img
+              src="https://yt3.ggpht.com/ytc/AIf8zZSoN0PkqajCSfsSJT8C0zd9kgJ5zI-JR_K7BOJ3=s68-c-k-c0x00ffffff-no-rj"
+              alt="img"
+            />
+          </div>
+          <div class="content-info">
+            <div class="channal-name">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div class="detaile-info">
+              <div class="views">1.5k .</div>
+              <div class="time">4 weeks ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="template-img">
+          <img
+            src="https://i.ytimg.com/vi/eViZ-a0JWzw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC3kQ0IQUkaARG4BT7uWNUAvm9DHQ"
+            alt="img-template"
+            class="img"
+          />
+          <div class="duration">
+            14.23
+          </div>
+        </div>
+        <div class="grid-two">
+          <div class="profile-img">
+            <img
+              src="https://yt3.ggpht.com/5fJ-Fzd-m5xGksoWq7UCKout2I9byp7pKJdbD34IK1fXoY8aqWzfb4Ft00OKJ360LCMoCJLg8A=s68-c-k-c0x00ffffff-no-rj"
+              alt="img"
+            />
+          </div>
+          <div class="content-info">
+            <div class="channal-name">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div class="detaile-info">
+              <div class="views">1.5k .</div>
+              <div class="time">4 weeks ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="template-img">
+          <img
+            src="https://i.ytimg.com/vi/eViZ-a0JWzw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC3kQ0IQUkaARG4BT7uWNUAvm9DHQ"
+            alt="img-template"
+            class="img"
+          />
+          <div class="duration">
+            14.23
+          </div>
+        </div>
+        <div class="grid-two">
+          <div class="profile-img">
+            <img
+              src="https://yt3.ggpht.com/5fJ-Fzd-m5xGksoWq7UCKout2I9byp7pKJdbD34IK1fXoY8aqWzfb4Ft00OKJ360LCMoCJLg8A=s68-c-k-c0x00ffffff-no-rj"
+              alt="img"
+            />
+          </div>
+          <div class="content-info">
+            <div class="channal-name">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div class="detaile-info">
+              <div class="views">1.5k .</div>
+              <div class="time">4 weeks ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div>
+    <div class="section"> -->
+      <div class="card">
+        <div class="template-img">
+          <img
+            src="https://i.ytimg.com/vi/v05qZ2kyTz0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCVX9XUq8XbHAYIJQrJnatbJdMdag"
+            alt="img-template"
+            class="img"
+          />
+          <div class="duration">
+            7.59
+          </div>
+        </div>
+        <div class="grid-two">
+          <div class="profile-img">
+            <img
+              src="https://yt3.ggpht.com/S5xfNjCxY5hSrlw4milYTm2mAN9qx6j_1mXHPJkFqxy8Os9FPjiS0K35ZfCq9qYC1ojCfIgXqw=s68-c-k-c0x00ffffff-no-rj"
+            />
+          </div>
+          <div class="content-info">
+            <div class="channal-name">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div class="detaile-info">
+              <div class="views">1.5k .</div>
+              <div class="time">4 weeks ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="template-img">
+          <img
+            src="https://i.ytimg.com/vi/jObOjhUkf50/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB6HK7M5z8WMZqzUDGAf3WqeZhm6Q"
+            alt="img-template"
+            class="img"
+          />
+          <div class="duration">
+            21.11
+          </div>
+        </div>
+        <div class="grid-two">
+          <div class="profile-img">
+            <img
+              src="https://yt3.ggpht.com/ytc/AIf8zZTM49hEx9zyui_0zDZKi75EgqJPJfuDmWu1cePdQQ=s68-c-k-c0x00ffffff-no-rj"
+              alt="img"
+            />
+          </div>
+          <div class="content-info">
+            <div class="channal-name">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div class="detaile-info">
+              <div class="views">1.5k .</div>
+              <div class="time">4 weeks ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="template-img">
+          <img
+            src="https://i.ytimg.com/vi/_9xTlXW6FPw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA0rBs_Nkvhl_CTxNylAH2XslmLng"
+            alt="img-template"
+            class="img"
+          />
+          <div class="duration">
+            17.45
+          </div>
+        </div>
+        <div class="grid-two">
+          <div class="profile-img">
+            <img
+              src="https://yt3.ggpht.com/iisXhqS6R5P5yQqeHhAKkBYjNGmSRJ5o9JCXS4bOw9_YTnv-WMVpTf6qqI2C38i1DI5xN_zpjQ=s68-c-k-c0x00ffffff-no-rj"
+              alt="img"
+            />
+          </div>
+          <div class="content-info">
+            <div class="channal-name">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div class="detaile-info">
+              <div class="views">1.5k .</div>
+              <div class="time">4 weeks ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="template-img">
+          <img
+            src="https://i.ytimg.com/vi/eViZ-a0JWzw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC3kQ0IQUkaARG4BT7uWNUAvm9DHQ"
+            alt="img-template"
+            class="img"
+          />
+          <div class="duration">
+            5.24
+          </div>
+        </div>
+        <div class="grid-two">
+          <div class="profile-img">
+            <img
+              src="https://yt3.ggpht.com/5fJ-Fzd-m5xGksoWq7UCKout2I9byp7pKJdbD34IK1fXoY8aqWzfb4Ft00OKJ360LCMoCJLg8A=s68-c-k-c0x00ffffff-no-rj"
+              alt="img"
+            />
+          </div>
+          <div class="content-info">
+            <div class="channal-name">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div class="detaile-info">
+              <div class="views">1.5k .</div>
+              <div class="time">4 weeks ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div>
+    <div class="section"> -->
+      <div class="card">
+        <div class="template-img">
+          <img
+            src="https://i.ytimg.com/vi/v05qZ2kyTz0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCVX9XUq8XbHAYIJQrJnatbJdMdag"
+            alt="img-template"
+            class="img"
+          />
+          <div class="duration">
+            6.23
+          </div>
+        </div>
+        <div class="grid-two">
+          <div class="profile-img">
+            <img
+              src="https://yt3.ggpht.com/S5xfNjCxY5hSrlw4milYTm2mAN9qx6j_1mXHPJkFqxy8Os9FPjiS0K35ZfCq9qYC1ojCfIgXqw=s68-c-k-c0x00ffffff-no-rj"
+            />
+          </div>
+          <div class="content-info">
+            <div class="channal-name">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div class="detaile-info">
+              <div class="views">1.5k .</div>
+              <div class="time">4 weeks ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="template-img">
+          <img
+            src="https://i.ytimg.com/vi/jObOjhUkf50/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB6HK7M5z8WMZqzUDGAf3WqeZhm6Q"
+            alt="img-template"
+            class="img"
+          />
+          <div class="duration">
+            46.27
+          </div>
+        </div>
+        <div class="grid-two">
+          <div class="profile-img">
+            <img
+              src="https://yt3.ggpht.com/ytc/AIf8zZTM49hEx9zyui_0zDZKi75EgqJPJfuDmWu1cePdQQ=s68-c-k-c0x00ffffff-no-rj"
+              alt="img"
+            />
+          </div>
+          <div class="content-info">
+            <div class="channal-name">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div class="detaile-info">
+              <div class="views">1.5k .</div>
+              <div class="time">4 weeks ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="template-img">
+          <img
+            src="https://i.ytimg.com/vi/_9xTlXW6FPw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA0rBs_Nkvhl_CTxNylAH2XslmLng"
+            alt="img-template"
+            class="img"
+          />
+          <div class="duration">
+            78.23
+          </div>
+        </div>
+        <div class="grid-two">
+          <div class="profile-img">
+            <img
+              src="https://yt3.ggpht.com/iisXhqS6R5P5yQqeHhAKkBYjNGmSRJ5o9JCXS4bOw9_YTnv-WMVpTf6qqI2C38i1DI5xN_zpjQ=s68-c-k-c0x00ffffff-no-rj"
+              alt="img"
+            />
+          </div>
+          <div class="content-info">
+            <div class="channal-name">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div class="detaile-info">
+              <div class="views">1.5k .</div>
+              <div class="time">4 weeks ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="template-img">
+          <img
+            src="https://i.ytimg.com/vi/eViZ-a0JWzw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC3kQ0IQUkaARG4BT7uWNUAvm9DHQ"
+            alt="img-template"
+            class="img"
+          />
+          <div class="duration">
+            14.23
+          </div>
+        </div>
+        <div class="grid-two">
+          <div class="profile-img">
+            <img
+              src="https://yt3.ggpht.com/5fJ-Fzd-m5xGksoWq7UCKout2I9byp7pKJdbD34IK1fXoY8aqWzfb4Ft00OKJ360LCMoCJLg8A=s68-c-k-c0x00ffffff-no-rj"
+              alt="img"
+            />
+          </div>
+          <div class="content-info">
+            <div class="channal-name">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div class="detaile-info">
+              <div class="views">1.5k .</div>
+              <div class="time">4 weeks ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/header.js"></script>
+  </body>
+</html>
