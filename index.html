@@ -13,17 +13,19 @@
   <body>
     <header class="header">
       <div class="left-section">
-        <img class="menu" src="./icons/menu-svgrepo-com.svg" alt="search bar" />
-        <img
+        <a href="https://www.youtube.com/">  
+          <img class="menu" src="./icons/menu-svgrepo-com.svg" alt="search bar" />
+        </a>
+        <a href="https://www.youtube.com/">
+          <img
           class="youtube-logo"
           src="./icons/youtube-svgrepo-com.svg"
           alt="youtube icon"
-        />
+          />
+        </a>
       </div>
-      <div class="center-section">
-        <input type="search" name="search" id="search"
-        oninput="handler()" 
-        />
+      <div class="center-section"> 
+        <input type="search" name="search" id="search" />
         <button class="search-btn">
           <img src="./icons/search-svgrepo-com.svg" alt="" />
         </button>
@@ -32,77 +34,93 @@
         </button>
       </div>
       <right-section class="right-section">
-        <img
+        <a href="https://www.youtube.com/">
+          <img
           src="./icons/video-upload-svgrepo-com.svg"
           alt="uplad icon"
           class="upload-btn"
-        />
-        <img src="./icons/app-svgrepo-com.svg" alt="app btn" class="app-btn" />
-        <div class="notification">
-
-          <img
-          src="./icons/notification-svgrepo-com.svg"
-          alt="notification-btn"
-          class="notification-btn"
           />
-          <div class="notification-count">
-            3
+        </a>
+        <a href="https://www.youtube.com/">
+
+          <img src="./icons/app-svgrepo-com.svg" alt="app btn" class="app-btn" />
+          <div class="notification">
+            <img
+            src="./icons/notification-svgrepo-com.svg"
+            alt="notification-btn"
+            class="notification-btn"
+            />
+            <div class="notification-count">3</div>
+          </a>
           </div>
-      </div>
-        
-        <img
+        <a href="https://www.youtube.com/feed/you">
+          <img
           src="./images/channels4_profile.jpg"
           alt="profile-img"
           class="profile-img"
-        />
-      </right-section>
+          />
+        </a>
+        </right-section>
     </header>
 
     <nav class="sidebar">
+            <a href="https://www.youtube.com/">
       <div class="sidebar-links">
-        <div class="icon">
-          <img src="./icons/icons8-home-100.png" alt="home" />
+          <div class="icon">
+            <img src="./icons/icons8-home-100.png" alt="home" />
+          </div>
+          <div class="text">Home</div>
         </div>
-        <div class="text">Home</div>
-      </div>
-      <div class="sidebar-links">
+      </a>
+      <a href="https://www.youtube.com/shorts/">
+        <div class="sidebar-links">
         <div class="icon">
           <img src="./icons/icons8-youtube-shorts-100.png" alt="shorts" />
         </div>
         <div class="text">shorts</div>
       </div>
+    </a>
+      <a href="https://www.youtube.com/feed/subscriptions">
       <div class="sidebar-links">
         <div class="icon">
           <img src="icons/icons8-video-playlist-100.png" alt="playlist" />
         </div>
         <div class="text">subscription</div>
       </div>
+    </a>
+      <a href="https://www.youtube.com/feed/you">
       <div class="sidebar-links">
         <div class="icon">
           <img src="icons/icons8-youtube-100.png" alt="subscription" />
         </div>
         <div class="text">you</div>
       </div>
+    </a>
+      <a href="https://music.youtube.com/">
       <div class="sidebar-links">
         <div class="icon">
           <img src="icons/icons8-youtube-music-100.png" alt="" />
         </div>
         <div class="text">youtube music</div>
       </div>
+    </a>
     </nav>
 
-    <main class="section">
+    <main class="section" id="section">
+      
+    </main>
+      <main class="section">
       <div class="card">
-        <div class="template-img">
-          <img
-            src="https://i.ytimg.com/vi/J-nB6mP9U6A/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCjltbh6PdoE8Kdw06E6dP6ZlQ81A"
-            alt="img-template"
-            class="img"
-          />
-          <div class="duration">
-            12.12
+        <a  href="#">
+          <div class="template-img">
+            <img
+              src="https://i.ytimg.com/vi/J-nB6mP9U6A/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCjltbh6PdoE8Kdw06E6dP6ZlQ81A"
+              alt="img-template"
+              class="img"
+            />
+            <div class="duration">12.12</div>
           </div>
-        </div>
+        </a>
         <div class="grid-two">
           <div class="profile-img">
             <img
@@ -111,14 +129,25 @@
             />
           </div>
           <div class="content-info">
-            <div class="channal-name">
-              Lorem ipsum dolor sit amet consectetur.
+              <a href="#">
+              <div class="video-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                sint repellendus cumque maxime.
+              </div>
+            </a>
+              <div class="channal-name">
+                <a href="">
+                   Lorem ipsum
+                   <div class="verified">
+                     <img src="./icons/icons8-verified-128.png" alt="verified" />
+                    </div>
+                  </a>
+                  </div>
+              <div class="detaile-info">
+
+                <div class="views">1.5k views . 4 weeks ago</div>
+              </div>
             </div>
-            <div class="detaile-info">
-              <div class="views">1.5k .</div>
-              <div class="time">4 weeks ago</div>
-            </div>
-          </div>
         </div>
       </div>
       <div class="card">
@@ -129,9 +158,7 @@
             class="img"
           />
         </div>
-        <div class="duration">
-          5.68
-        </div>
+        <div class="duration">5.68</div>
         <div class="grid-two">
           <div class="profile-img">
             <img
@@ -157,9 +184,7 @@
             alt="img-template"
             class="img"
           />
-          <div class="duration">
-            14.23
-          </div>
+          <div class="duration">14.23</div>
         </div>
         <div class="grid-two">
           <div class="profile-img">
@@ -186,9 +211,7 @@
             alt="img-template"
             class="img"
           />
-          <div class="duration">
-            14.23
-          </div>
+          <div class="duration">14.23</div>
         </div>
         <div class="grid-two">
           <div class="profile-img">
@@ -208,8 +231,6 @@
           </div>
         </div>
       </div>
-    <!-- </div>
-    <div class="section"> -->
       <div class="card">
         <div class="template-img">
           <img
@@ -217,9 +238,7 @@
             alt="img-template"
             class="img"
           />
-          <div class="duration">
-            7.59
-          </div>
+          <div class="duration">7.59</div>
         </div>
         <div class="grid-two">
           <div class="profile-img">
@@ -245,9 +264,7 @@
             alt="img-template"
             class="img"
           />
-          <div class="duration">
-            21.11
-          </div>
+          <div class="duration">21.11</div>
         </div>
         <div class="grid-two">
           <div class="profile-img">
@@ -274,9 +291,7 @@
             alt="img-template"
             class="img"
           />
-          <div class="duration">
-            17.45
-          </div>
+          <div class="duration">17.45</div>
         </div>
         <div class="grid-two">
           <div class="profile-img">
@@ -303,9 +318,7 @@
             alt="img-template"
             class="img"
           />
-          <div class="duration">
-            5.24
-          </div>
+          <div class="duration">5.24</div>
         </div>
         <div class="grid-two">
           <div class="profile-img">
@@ -325,8 +338,6 @@
           </div>
         </div>
       </div>
-    <!-- </div>
-    <div class="section"> -->
       <div class="card">
         <div class="template-img">
           <img
@@ -334,9 +345,7 @@
             alt="img-template"
             class="img"
           />
-          <div class="duration">
-            6.23
-          </div>
+          <div class="duration">6.23</div>
         </div>
         <div class="grid-two">
           <div class="profile-img">
@@ -362,9 +371,7 @@
             alt="img-template"
             class="img"
           />
-          <div class="duration">
-            46.27
-          </div>
+          <div class="duration">46.27</div>
         </div>
         <div class="grid-two">
           <div class="profile-img">
@@ -391,9 +398,7 @@
             alt="img-template"
             class="img"
           />
-          <div class="duration">
-            78.23
-          </div>
+          <div class="duration">78.23</div>
         </div>
         <div class="grid-two">
           <div class="profile-img">
@@ -420,9 +425,7 @@
             alt="img-template"
             class="img"
           />
-          <div class="duration">
-            14.23
-          </div>
+          <div class="duration">14.23</div>
         </div>
         <div class="grid-two">
           <div class="profile-img">
@@ -444,6 +447,27 @@
       </div>
     </main>
 
+  
+    <!-- <iframe id="player" type="text/html" width="640" height="390"
+  src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com"
+  frameborder="0"></iframe> -->
+
+       
+      
+
+
+  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/EJxeMbDTkVI?si=-TT73ZZ2MAy2UHqJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; " allowfullscreen></iframe> -->
+
+
+
+
+
+
+
+
+
+
     <script src="js/header.js"></script>
+    <script type="module" src="js/script.js"></script>
   </body>
 </html>
